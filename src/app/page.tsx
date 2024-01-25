@@ -6,7 +6,7 @@ export default function Home() {
             <header className="bg-cover bg-center h-screen relative">
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
                     <h1 className="text-4xl font-bold mb-4">Invitaciones de Boda</h1>
-                    <p className="text-lg">¡Bienvenidos a nuestra celebración!</p>
+                    <p className="text-lg">¡Bienvenidos a nuestra celebraciónnn!</p>
                 </div>
             </header>
 
