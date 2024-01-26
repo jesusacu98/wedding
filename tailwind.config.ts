@@ -14,9 +14,10 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        'custom-serif': ['"Times New Roman"', 'serif'],
-        'custom-sans': ['Sans-serif', 'sans-serif'],
-      },
+        'custom-serif': ['Times New Roman', 'Sans-serif'],
+        'custom-sans': ['Sans-serif', 'Sans-serif'],
+        'custom-cursive': ['Darleston', 'Sans-serif']
+      }
     },
   },
   plugins: [],
