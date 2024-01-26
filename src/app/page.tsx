@@ -120,7 +120,7 @@ export default function Home() {
 
                     <div className="flex items-center justify-center pt-10">
                         <div className="w-80 h-80 rounded-[75px] overflow-hidden">
-                            <img className="w-full h-full object-cover" src="/pareja.png" alt="" />
+                            <img className="w-full h-full object-cover" src="/juntos.png" alt="" />
                         </div>
                     </div>
 
