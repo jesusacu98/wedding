@@ -48,7 +48,7 @@ export default function Home() {
 
                 <div className="flex flex-col text-white text-center pt-20">
                     <div className="text-center ">
-                        <div className="text-4xl font-bold">Contador de días</div>
+                        {/* <div className="text-4xl font-bold">Contador de días</div> */}
                         <div className="grid grid-cols-4 gap-4 mt-4 px-[6px]">
                             <div className="bg-[#C9511D] rounded-[20px] p-2">
                                 <div className="text-2xl font-bold">{countdown.days}</div>
