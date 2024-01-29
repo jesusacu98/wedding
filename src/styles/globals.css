@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.tracking-ultra-wide {
+  letter-spacing: 0.3em; /* Ajusta el valor según tus preferencias */
+}
