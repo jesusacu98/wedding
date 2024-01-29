@@ -33,50 +33,47 @@ export default function Portada() {
     }, []);
 
     return (
-        <section className="flex-col w-full h-screen relative flex bg-cover bg-center bg-opacity-50" style={{ backgroundImage: "url('/anillo.png')" }}>
+        <section className="flex-col w-full h-screen relative flex bg-cover bg-center bg-opacity-50" style={{ backgroundImage: "url('/juntos.png')" }}>
             <div className="flex flex-col text-white text-center pt-20">
-                <span className="block text-2xl font-custom-serif tracking-[6.5px] mb-1">NUESTRA BODA</span>
+                <span className="block text-2xl font-principal-text tracking-[6.5px] mb-1">NUESTRA BODA</span>
+                <span className="block text-4xl font-cursive mb-1">Adriana & Jesús</span>
             </div>
-            <div className="flex flex-col text-white text-center pt-20">
+            {/* <div className="flex flex-col text-white text-center pt-20">
                 <span className="block text-5xl font-custom-cursive tracking-tighter">Adriana & Jesús</span>
-            </div>
-            <div className="flex flex-col text-white text-center pt-20">
-                <span className="block text-2xl font-custom-serif tracking-[2.5px]">SAVE THE DATE</span>
-            </div>
-
+            </div> */}
             <div className="flex flex-col text-white text-center pt-20">
                 <div className="text-center ">
                     {/* <div className="text-4xl font-bold">Contador de días</div> */}
-                    <div className="grid grid-cols-4 gap-4 mt-4 px-[6px]">
-                        <div className="bg-[#C9511D] rounded-[20px] p-2">
+                    {/* <div className="grid grid-cols-4 gap-4 mt-4 px-[6px]">
+                        <div className="p-2">
                             <div className="text-2xl font-bold">{countdown.days}</div>
                             <div className="text-sm">Días</div>
                         </div>
-                        <div className="bg-[#C9511D] rounded-[20px] p-2">
+                        <div className="p-2">
                             <div className="text-2xl font-bold">{countdown.hours}</div>
                             <div className="text-sm">Horas</div>
                         </div>
-                        <div className="bg-[#C9511D] rounded-[20px] p-2">
+                        <div className="p-2">
                             <div className="text-2xl font-bold">{countdown.minutes}</div>
                             <div className="text-sm">Minutos</div>
                         </div>
-                        <div className="bg-[#C9511D] rounded-[20px] p-2">
+                        <div className="p-2">
                             <div className="text-2xl font-bold">{countdown.seconds}</div>
                             <div className="text-sm">Segundos</div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
-            <div className="flex flex-col text-white text-center pt-10">
-                <span className="block text-3xl font-custom-serif tracking-tighter">08 de MARZO 2024</span>
+            {/* <div className="flex flex-col text-white text-center pt-10">
+                <span className="block text-3xl font-cursive tracking-tighter">08 de MARZO 2024</span>
             </div>
 
             <div className="flex-col text-white text-center pt-10">
-                <button className="bg-[#C9511D] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue active:bg-[#C9511D]">
+                <button className="bg-secondary text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue active:bg-secondary">
                     AGENDAR
                 </button>
-            </div>
+            </div> */}
 
         </section>
     );

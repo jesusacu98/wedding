@@ -14,10 +14,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        'custom-serif': ['Times New Roman', 'Sans-serif'],
-        'custom-sans': ['Sans-serif', 'Sans-serif'],
-        'custom-cursive': ['Darleston', 'Sans-serif']
-      }
+        'tittle': [],
+        'principal-text': ["Times New Roman", 'Sans-serif'],
+        'secondary-text': [],
+        'cursive': ['Great Vibes', 'Sans-serif']
+      },
+      colors: {
+        primary: 'white',
+        secondary: '#C9511D',
+      },
     },
   },
   plugins: [],
