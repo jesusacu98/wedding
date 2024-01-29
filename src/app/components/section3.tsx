@@ -18,6 +18,7 @@ export default function Location() {
 
                 <div className="relative flex flex-col md:flex-row text-primary">
                     <div className="w-full md:w-1/2 relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/iglesia.jpg')" }}>
+                        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                             <p className="text-3xl whitespace-nowrap">Ceremonia Religiosa</p>
                             <p className="text-xl whitespace-nowrap">Viernes 08 de Marzo 2024</p>
@@ -29,6 +30,7 @@ export default function Location() {
                     </div>
 
                     <div className="w-full md:w-1/2 relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/salon.jpg')" }}>
+                        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                             <p className="text-3xl whitespace-nowrap">La Fiesta</p>
                             <p className="text-xl whitespace-nowrap">Viernes 08 de Marzo 2024</p>
