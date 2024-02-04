@@ -9,18 +9,22 @@ export default function Fotos() {
                 <div className="bg-gray-300 h-full flex items-center justify-center">
                     <img src="/21.jpg" alt="Imagen 1" className="max-h-full max-w-full" />
                 </div>
+                {/* <div className="bg-gray-300 h-full flex items-center justify-center">
+                    <img src="/10.jpg" alt="Imagen 1" className="max-h-full max-w-full" />
+                </div> */}
                 <div className="flex justify-between">
-                    <div className="h-[20rem] flex justify-start">
+                    {/* <div className="h-[20rem] flex justify-start">
                         <img src="/10.jpg" alt="Imagen 2" className="max-h-full max-w-full m-0 p-0" />
-                    </div>
-                    <div className="flex flex-col">
-                        <div className="h-40 flex items-center">
-                            <img src="/22.jpg" alt="Imagen 3" className="max-h-full max-w-full m-0 p-0" />
+                    </div> */}
+                    <div className="flex">
+                        <div className="flex-grow h-40 flex items-center">
+                            <img src="/4.jpg" alt="Imagen 3" className="w-full h-full object-cover" />
                         </div>
-                        <div className="h-40 flex items-center justify-center">
-                            <img src="/22.jpg" alt="Imagen 4" className="max-h-full max-w-full m-0 p-0" />
+                        <div className="flex-grow h-40 flex items-center">
+                            <img src="/16.jpg" alt="Imagen 4" className="w-full h-full object-cover" />
                         </div>
                     </div>
+
                 </div>
                 {/* Agrega más divs para más imágenes */}
             </div>
