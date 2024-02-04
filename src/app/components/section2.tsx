@@ -38,13 +38,13 @@ export default function Portada() {
                 <img className="w-16 h-16" src="/tiempo.png" alt="" />
             </div> */}
 
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center text-center">
                 <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">El comienzo de nuestra historia...</span>
             </div>
 
-            {/* <div className="flex flex-col text-secondary text-center pt-10">
-                <span className="block text-3xl font-cursive tracking-tighter">08 de Marzo 2024</span>
-            </div> */}
+            <div className="flex flex-col items-center text-center">
+                <span className="text-black block text-2xl font-secondary mt-2 tracking-[1.5px]">08 de Marzo de 2024</span>
+            </div>
 
             <div className="flex flex-col text-black text-center">
                 <div className="text-center">
@@ -71,7 +71,7 @@ export default function Portada() {
 
             <div className="flex-col text-white text-center pt-10">
                 <button className="bg-secondary text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue active:bg-secondary">
-                    AGENDAR
+                    AGENDAR DÍA
                 </button>
             </div>
 
