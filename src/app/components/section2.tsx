@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import ScrollAnimation from 'react-animate-on-scroll';
+// import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Portada() {
 
@@ -37,7 +37,7 @@ export default function Portada() {
     return (
         <section className="flex-col p-5 md:p-10 lg:p-14 xl:p-18 bg-white">
 
-            <ScrollAnimation animateIn="animate__slideInDown" animateOnce>
+            {/* <ScrollAnimation animateIn="animate__slideInDown" animateOnce> */}
                 <div className="flex flex-col items-center text-center">
                     <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
                         El comienzo de una nueva aventura...
@@ -72,7 +72,7 @@ export default function Portada() {
                         </div>
                     </div>
                 </div>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
 
 
             {/* <div className="flex-col text-white text-center pt-6">

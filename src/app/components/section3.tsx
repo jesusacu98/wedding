@@ -1,5 +1,5 @@
 "use client";
-import ScrollAnimation from 'react-animate-on-scroll';
+// import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function AboutUs() {
     return (
@@ -15,7 +15,7 @@ export default function AboutUs() {
                     </span>
                 </div>
 
-                <ScrollAnimation animateIn="animate__slideInRight" animateOnce>
+                {/* <ScrollAnimation animateIn="animate__slideInRight" animateOnce> */}
                     <div className="flex flex-col items-center justify-center mt-3 px-[46px]">
                         <span className="block text-2xl font-[300] font-principal tracking-[1.5px]">
                             Adriana Guadalupe Hernández Marrujo
@@ -37,7 +37,7 @@ export default function AboutUs() {
                             Coincidimos sin imaginar lo maravillosa que seria, nos hicimos novios y años después nos comprometimos.
                         </span>
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
 
                 <div className="flex items-center justify-center m-6">
                     <div className="w-80 h-80 rounded-[75px] overflow-hidden">
@@ -55,7 +55,7 @@ export default function AboutUs() {
                     </span>
                 </div>
 
-                <ScrollAnimation animateIn="animate__fadeIn" animateOnce>
+                {/* <ScrollAnimation animateIn="animate__fadeIn" animateOnce> */}
                     <div className="flex flex-col items-center justify-center">
                         <span className="text-secondary block text-4xl font-cursive tracking-[1.5px]">
                             Novia
@@ -76,7 +76,7 @@ export default function AboutUs() {
                             José Alfredo Vizcarra Bernal
                         </span>
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
 
                 <div className="flex flex-col items-center justify-center mt-10">
                     <img className="w-100 h-100" src="/fondo3.png" alt="" />
@@ -92,7 +92,7 @@ export default function AboutUs() {
                     <img className="w-16 h-16" src="/circulo.png" alt="" />
                 </div>
 
-                <ScrollAnimation animateIn="animate__slideInLeft" animateOnce>
+                {/* <ScrollAnimation animateIn="animate__slideInLeft" animateOnce> */}
                     <div className="flex flex-col items-center justify-center">
                         <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
                             Matrimonio
@@ -107,9 +107,9 @@ export default function AboutUs() {
                             Luis Fernando Plascencia Vega
                         </span>
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
 
-                <ScrollAnimation animateIn="animate__slideInRight" animateOnce>
+                {/* <ScrollAnimation animateIn="animate__slideInRight" animateOnce> */}
                     <div className="flex flex-col items-center justify-center mt-10">
                         <img className="w-16 h-16" src="/vela.png" alt="" />
                     </div>
@@ -128,9 +128,9 @@ export default function AboutUs() {
                             Ramiro López López
                         </span>
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
 
-                <ScrollAnimation animateIn="animate__slideInLeft" animateOnce>
+                {/* <ScrollAnimation animateIn="animate__slideInLeft" animateOnce> */}
                     <div className="flex flex-col items-center justify-center mt-10">
                         <img className="w-16 h-16" src="/anillos.png" alt="" />
                     </div>
@@ -149,9 +149,9 @@ export default function AboutUs() {
                             Héctor Antonio Hernández Marrujo
                         </span>
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
 
-                <ScrollAnimation animateIn="animate__slideInRight" animateOnce>
+                {/* <ScrollAnimation animateIn="animate__slideInRight" animateOnce> */}
                     <div className="flex flex-col items-center justify-center mt-10">
                         <img className="w-16 h-16" src="/arras.png" alt="" />
                     </div>
@@ -167,9 +167,9 @@ export default function AboutUs() {
                             Isela Guadalupe Hernández Sainz
                         </span>
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
 
-                <ScrollAnimation animateIn="animate__slideInLeft" animateOnce>
+                {/* <ScrollAnimation animateIn="animate__slideInLeft" animateOnce> */}
                     <div className="flex flex-col items-center justify-center mt-10">
                         <img className="w-16 h-16" src="/lazo.png" alt="" />
                     </div>
@@ -188,7 +188,7 @@ export default function AboutUs() {
                             José Alfredo Vizcarra Valdés
                         </span>
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
             </div>
         </section>
     );
