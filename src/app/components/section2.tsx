@@ -36,7 +36,7 @@ export default function Portada() {
         <section className="flex-col p-5 md:p-10 lg:p-14 xl:p-18 bg-white">
             <div className="flex flex-col items-center text-center">
                 <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
-                    El comienzo de nuestra aventura...
+                    El comienzo de una nueva aventura...
                 </span>
             </div>
 

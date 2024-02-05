@@ -2,12 +2,8 @@
 
 export default function Location() {
     return (
-        <section className="flex-col pl-6 md:pl-10 lg:pl-14 xl:pl-[24rem] pr-6 md:pr-10 lg:pr-14 xl:pr-[24rem] bg-white">
+        <section className="flex-col md:pl-10 lg:pl-14 xl:pl-[24rem] md:pr-10 lg:pr-14 xl:pr-[24rem] bg-white">
             <div className="text-black text-center">
-                <div className="flex flex-col items-center justify-center mt-10">
-                    <img className="w-16 h-16" src="/ubicacion.png" alt="" />
-                </div>
-
                 <div className="flex flex-col items-center justify-center mt-10">
                     <img className="w-100 h-100" src="/fondo2.png" alt="" />
                     <span className="text-secondary block text-4xl font-cursive mt-[-34px] tracking-[1.5px] absolute">
@@ -18,12 +14,8 @@ export default function Location() {
                     </span>
                 </div>
 
-                {/* <div className="flex flex-col items-center justify-center mt-5 px-[46px]">
-                    <p className="block text-2xl font-[300] font-secondary tracking-[1.5px]">Esperamos verte</p>
-                </div> */}
-
-                <div className="relative flex flex-col md:flex-row text-primary leading-10">
-                    <div className="w-full md:w-1/2 relative bg-cover bg-center border border-black border-solid p-4 h-[25.4rem]" style={{ backgroundImage: "url('/iglesia.jpg')" }}>
+                <div className="relative flex flex-col md:flex-row text-primary leading-10 mt-[-12px]">
+                    <div className="w-full md:w-1/2 relative bg-cover bg-center border border-black border-solid p-4 h-[35em]" style={{ backgroundImage: "url('/iglesia.jpg')" }}>
                         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                             <div className="flex flex-col items-center justify-center pb-3">
@@ -38,7 +30,7 @@ export default function Location() {
                         </div>
                     </div>
 
-                    <div className="w-full md:w-1/2 relative bg-cover bg-center border border-black border-solid p-4 h-[25.4rem]" style={{ backgroundImage: "url('/salon.jpg')" }}>
+                    <div className="w-full md:w-1/2 relative bg-cover bg-center border border-black border-solid p-4 h-[35em]" style={{ backgroundImage: "url('/salon.jpg')" }}>
                         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                             <div className="flex flex-col items-center justify-center pb-3">

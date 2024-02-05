@@ -6,6 +6,7 @@ import AboutUs from "./components/section3";
 import Location from "./components/section4";
 import Fotos from "./components/section5";
 import Informacion from "./components/section6";
+import Reglas from "./components/section7";
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
             <Location></Location>
             <Fotos></Fotos>
             <Informacion></Informacion>
+            <Reglas></Reglas>
         </div>
     );
 }
