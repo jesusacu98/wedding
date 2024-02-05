@@ -15,7 +15,7 @@ export default function Fotos() {
             </div>
 
             <div className="flex flex-col items-center text-center mt-10 px-[46px] pb-[60px]">
-                <span className="block text-1xl font-[300] font-secondary tracking-[1.5px]">
+                <span className="text-black block text-3xl font-cursive tracking-[1.5px]">
                     Te quiero hoy, mañana, la semana entrante y el resto de mi vida.
                 </span>
             </div>
