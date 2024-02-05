@@ -35,3 +35,7 @@ body {
 .tracking-ultra-wide {
   letter-spacing: 0.2em; /* Ajusta el valor según tus preferencias */
 }
+
+.text-1xl {
+  font-size: 1em;
+}
