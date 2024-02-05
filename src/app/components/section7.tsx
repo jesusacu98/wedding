@@ -1,4 +1,6 @@
 "use client";
+import ScrollAnimation from 'react-animate-on-scroll';
+import 'animate.css/animate.min.css';
 
 export default function Reglas() {
     return (
@@ -15,11 +17,13 @@ export default function Reglas() {
                 </span>
             </div>
 
+            <ScrollAnimation animateIn="animate__bounceIn" animateOnce>
             <div className="flex flex-col items-center text-center mt-[-45px] px-[46px]">
-                <span className="block text-1xl font-[300] font-secondary tracking-[1.5px]">
+                <span className="text-black text-1xl font-[300] font-secondary tracking-[1.5px]">
                     Para nosotros es importante que cumplas con las peticiones que te dejamos a continuación.
                 </span>
             </div>
+            </ScrollAnimation>
 
             <div className="flex items-center justify-center mt-[60px]">
                 <img className="w-16 h-16" src="/vestido.png" alt="" />
