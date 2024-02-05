@@ -9,13 +9,13 @@ export default function Fotos() {
             </div>
 
             <div className="flex flex-col items-center justify-center">
-                <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
+                <span className="text-secondary block text-4xl font-secondary mt-2 tracking-[1.5px]">
                     Nuestro amor
                 </span>
             </div>
 
             <div className="flex flex-col items-center justify-center mt-5 px-[46px]">
-                <span className="block text-[16px] font-[300] font-principal tracking-[1.5px]">
+                <span className="block text-[16px] font-[300] font-secondary tracking-[1.5px]">
                     Te quiero hoy, mañana, la semana entrante y el resto de mi vida.
                 </span>
             </div>

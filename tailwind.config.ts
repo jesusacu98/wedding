@@ -15,6 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         'principal': ["Playfair Display"],
+        'secondary': ["Muli", "Sans-serif"],
         'cursive': ["Parisienne, cursive"]
       },
       colors: {

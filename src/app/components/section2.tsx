@@ -34,23 +34,19 @@ export default function Portada() {
 
     return (
         <section className="flex-col p-5 md:p-10 lg:p-14 xl:p-18 bg-white">
-            {/* <div className="flex flex-col items-center justify-center">
-                <img className="w-16 h-16" src="/tiempo.png" alt="" />
-            </div> */}
-
             <div className="flex flex-col items-center text-center">
                 <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
-                    El comienzo de nuestra historia...
+                    El comienzo de nuestra aventura...
                 </span>
             </div>
 
             <div className="flex flex-col items-center text-center">
-                <span className="text-black block text-2xl font-principal mt-2 tracking-[1.5px]">
+                <span className="text-black block text-2xl font-secondary mt-4 tracking-[1.5px]">
                     08 de Marzo de 2024
                 </span>
             </div>
 
-            <div className="flex flex-col font-principal text-black text-center">
+            <div className="flex flex-col font-secondary text-black text-center">
                 <div className="text-center">
                     <div className="grid grid-cols-4 gap-4 mt-4 px-[6px]">
                         <div className="p-2 flex flex-col items-center">
@@ -73,11 +69,11 @@ export default function Portada() {
                 </div>
             </div>
 
-            <div className="flex-col text-white text-center pt-10">
-                <button className="bg-secondary text-white font-principal font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue active:bg-secondary">
+            {/* <div className="flex-col text-white text-center pt-6">
+                <button className="bg-secondary text-white font-secondary font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue active:bg-secondary">
                     Agendar día
                 </button>
-            </div>
+            </div> */}
 
         </section>
     );
