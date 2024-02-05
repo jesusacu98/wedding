@@ -14,9 +14,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        'principal': ["Times New Roman", "Sans-serif"],
-        'secondary': ["Muli", "Sans-serif"],
-        'cursive': ["Great Vibes", "Sans-serif"]
+        'principal': ["Playfair Display"],
+        'cursive': ["Parisienne, cursive"]
       },
       colors: {
         primary: 'white',

@@ -33,20 +33,24 @@ export default function Portada() {
     }, []);
 
     return (
-        <section className="flex-col p-6 md:p-10 lg:p-14 xl:p-18 bg-white">
+        <section className="flex-col p-5 md:p-10 lg:p-14 xl:p-18 bg-white">
             {/* <div className="flex flex-col items-center justify-center">
                 <img className="w-16 h-16" src="/tiempo.png" alt="" />
             </div> */}
 
             <div className="flex flex-col items-center text-center">
-                <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">El comienzo de nuestra historia...</span>
+                <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
+                    El comienzo de nuestra historia...
+                </span>
             </div>
 
             <div className="flex flex-col items-center text-center">
-                <span className="text-black block text-2xl font-secondary mt-2 tracking-[1.5px]">08 de Marzo de 2024</span>
+                <span className="text-black block text-2xl font-principal mt-2 tracking-[1.5px]">
+                    08 de Marzo de 2024
+                </span>
             </div>
 
-            <div className="flex flex-col text-black text-center">
+            <div className="flex flex-col font-principal text-black text-center">
                 <div className="text-center">
                     <div className="grid grid-cols-4 gap-4 mt-4 px-[6px]">
                         <div className="p-2 flex flex-col items-center">
@@ -70,8 +74,8 @@ export default function Portada() {
             </div>
 
             <div className="flex-col text-white text-center pt-10">
-                <button className="bg-secondary text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue active:bg-secondary">
-                    AGENDAR DÍA
+                <button className="bg-secondary text-white font-principal font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue active:bg-secondary">
+                    Agendar día
                 </button>
             </div>
 
