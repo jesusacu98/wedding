@@ -18,7 +18,7 @@ export default function AboutUs() {
 
                 <ScrollAnimation animateIn="animate__slideInRight" animateOnce>
                     <div className="flex flex-col items-center justify-center mt-3 px-[46px]">
-                        <span className="block text-2xl font-[300] font-principal tracking-[1.5px]">
+                        <span className="text-black block text-2xl font-[300] font-principal tracking-[1.5px]">
                             Adriana Guadalupe Hernández Marrujo
                         </span>
                         <span className="block text-2xl font-[300] font-principal tracking-[1.5px]">
