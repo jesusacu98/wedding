@@ -1,17 +1,33 @@
 "use client";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 
 export default function Reglas() {
-    const [selectedOption, setSelectedOption] = useState({ value: '1', text: 'Si podre asistir' });
+    const [selectedOption, setSelectedOption] = useState('si');
     const [nombre, setNombre] = useState('');
     const [text, setText] = useState('');
 
+    const setMensaje = () => {
+        if (!nombre.trim()) return;
+        let mensaje = "";
+        if (selectedOption == 'si') mensaje = " y confirmo mi asistencia";
+        else mensaje = ", lo siento no podre asistir";
+        setText(`https://wa.me/6692727479/?text=¡Hola!, soy ${nombre}${mensaje} a la boda`);
+    }
+
+    useEffect(()=> {
+        console.log(selectedOption)
+        setMensaje();
+    },[selectedOption]);
+
+    useEffect(()=> {
+        console.log(selectedOption)
+        setMensaje();
+    },[nombre]);
+
     const handleChange = (e: any) => {
-        const selectedText = e.target.options[e.target.selectedIndex].text;
-        setSelectedOption({ value: e.target.value, text: selectedText });
-        setText(`https://wa.me/6692727479/?text=Hola, soy ${nombre}, ${selectedText}`);
+        setSelectedOption(e.target.value);
     }
 
     const handleChange2 = (e: any) => {
@@ -33,11 +49,11 @@ export default function Reglas() {
             </div>
 
             <ScrollAnimation animateIn="animate__bounceIn" animateOnce>
-            <div className="flex flex-col items-center text-center mt-[-45px] px-[46px]">
-                <span className="text-black text-1xl font-[300] font-secondary tracking-[1.5px]">
-                    Para nosotros es importante que cumplas con las peticiones que te dejamos a continuación.
-                </span>
-            </div>
+                <div className="flex flex-col items-center text-center mt-[-45px] px-[46px]">
+                    <span className="text-black text-1xl font-[300] font-secondary tracking-[1.5px]">
+                        Para nosotros es importante que cumplas con las peticiones que te dejamos a continuación.
+                    </span>
+                </div>
             </ScrollAnimation>
 
             <div className="flex items-center justify-center mt-[60px]">
@@ -52,7 +68,7 @@ export default function Reglas() {
             </div>
 
             <div className="flex flex-col items-center text-center px-[46px]">
-                <span className="block text-1xl font-[300] font-secondary tracking-[1.5px]">
+                <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
                     Formal
                 </span>
             </div>
@@ -68,7 +84,7 @@ export default function Reglas() {
             </div>
 
             <div className="flex flex-col items-center text-center px-[46px]">
-                <span className="block text-1xl font-[300] font-secondary tracking-[1.5px]">
+                <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
                     Amamos a sus pequeños, pero queremos que en este día solo tengan que preocuparte por pasarla increíble.
                 </span>
             </div>
@@ -86,7 +102,7 @@ export default function Reglas() {
             </div>
 
             <div className="flex flex-col items-center text-center mt-2 px-[46px]">
-                <span className="block text-1xl font-[300] font-secondary tracking-[1.5px]">
+                <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
                     Celebrar nuestro amor es un sueño hecho realidad, y para que sea perfecto, nos encantaría contar contigo en nuestra lista de invitados. ¿Nos confirmas tu asistencia?
                 </span>
             </div>
@@ -96,24 +112,28 @@ export default function Reglas() {
                     value={nombre}
                     onChange={handleChange2}
                     type="text"
-                    placeholder="Nombre de los asistentes"
+                    placeholder="Tu nombre"
                     className="border border-gray-300 p-2 w-64"
                 />
 
                 <select
-                    value={selectedOption.value}
+                    value={selectedOption}
                     onChange={handleChange}
                     className="border border-gray-300 p-2 w-64"
                 >
-                    <option value="1">Si podré asistir</option>
-                    <option value="2">Lo siento, no podré asistir</option>
+                    <option value="si">Si podré asistir</option>
+                    <option value="no">Lo siento, no podré asistir</option>
                 </select>
             </div>
 
-
-
-            <div className="flex flex-col items-center text-center mt-2 px-[46px]">
-                <a href={text} target="_blank" className="font-secondary text-sm tracking-ultra-wide bg-secondary text-primary px-4 py-2 mt-2 font-bold">ENVIAR</a>
+            <div className="flex flex-col items-center text-center mt-3 px-4 space-y-4">
+                {nombre.trim() ? (
+                    <a href={text} target="_blank" className="font-secondary text-sm tracking-ultra-wide bg-secondary text-primary px-4 py-2 mt-2 font-bold">
+                        ENVIAR
+                    </a>
+                ) : (
+                    <p className="text-secondary pl-[4em] pr-[4em]">Por favor, ingresa tu nombre para enviar una respuesta.</p>
+                )}
             </div>
 
             <img src="/22.jpg" alt="Imagen 1" className="max-h-full max-w-full mt-[60px]" />
