@@ -41,7 +41,7 @@ export default function Portada() {
             <ScrollAnimation animateIn="animate__slideInDown" animateOnce>
                 <div className="flex flex-col items-center text-center">
                     <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
-                        El comienzo de una nueva aventura...
+                        El comienzo de un nuevo capítulo...
                     </span>
                 </div>
 

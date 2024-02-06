@@ -10,14 +10,25 @@ export default function Reglas(props: Props) {
     const [selectedOption, setSelectedOption] = useState('si');
     const [nombre, setNombre] = useState('');
     const [text, setText] = useState('');
+    const [personas, setPersonas] = useState('');
 
     const setMensaje = () => {
         if (!nombre.trim()) return;
+
         let mensaje = ``;
-        if (selectedOption == 'si') mensaje = `, confirmo asistencia para ${props.pases} personas.`;
+        if (selectedOption == 'si') mensaje = `, confirmo asistencia para ${props.pases} ${personas}.`;
         else mensaje = `, lo siento no podre asistir a la boda.`;
         setText(`https://wa.me/6693258216/?text=¡Hola!, soy ${nombre}${mensaje}`);
     }
+
+    const iniciarPersonas = () => {
+        if(props.pases === 1) setPersonas('persona');
+        else setPersonas('personas');
+    }
+
+    useEffect(() => {
+        iniciarPersonas();
+    }, [props.pases]);
 
     useEffect(() => {
         setMensaje();
@@ -51,29 +62,23 @@ export default function Reglas(props: Props) {
                 </div>
 
                 <ScrollAnimation animateIn="animate__bounceIn" animateOnce>
-                    <div className="flex flex-col items-center text-center mt-[-45px] px-[46px]">
-                        <span className="text-black text-1xl font-[300] font-secondary tracking-[1.5px]">
-                            Para nosotros es importante que cumplas con las peticiones que te dejamos a continuación.
+                    <div className="flex items-center justify-center mt-[-150px]">
+                        <img className="w-16 h-16" src="/vestido.png" alt="" />
+                        <img className="w-16 h-16" src="/traje.png" alt="" />
+                    </div>
+
+                    <div className="flex flex-col items-center justify-center">
+                        <span className="text-secondary block text-4xl font-cursive mt-5 tracking-[1.5px]">
+                            Código de Vestimenta
+                        </span>
+                    </div>
+
+                    <div className="flex flex-col items-center text-center px-[46px]">
+                        <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
+                            Formal
                         </span>
                     </div>
                 </ScrollAnimation>
-
-                <div className="flex items-center justify-center mt-[60px]">
-                    <img className="w-16 h-16" src="/vestido.png" alt="" />
-                    <img className="w-16 h-16" src="/traje.png" alt="" />
-                </div>
-
-                <div className="flex flex-col items-center justify-center">
-                    <span className="text-secondary block text-4xl font-cursive mt-5 tracking-[1.5px]">
-                        Código de Vestimenta
-                    </span>
-                </div>
-
-                <div className="flex flex-col items-center text-center px-[46px]">
-                    <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
-                        Formal
-                    </span>
-                </div>
 
                 <ScrollAnimation animateIn="animate__slideInRight" animateOnce>
                     <div className="flex flex-col items-center justify-center mt-[60px]">
@@ -115,7 +120,7 @@ export default function Reglas(props: Props) {
 
                     <div className="flex flex-col items-center text-justify mt-2 px-[35px]">
                         <span className="block text-2xl text-secondary font-[300] font-cursive tracking-[1.5px]">
-                            Pases: {props.pases} personas
+                            Pases: {props.pases} {personas}
                         </span>
                     </div>
 
