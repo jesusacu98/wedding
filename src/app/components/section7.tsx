@@ -1,6 +1,21 @@
 "use client";
+import { useState } from 'react';
 
 export default function Reglas() {
+    const [selectedOption, setSelectedOption] = useState({ value: '1', text: 'Si podre asistir' });
+    const [nombre, setNombre] = useState('');
+    const [text, setText] = useState('');
+
+    const handleChange = (e: any) => {
+        const selectedText = e.target.options[e.target.selectedIndex].text;
+        setSelectedOption({ value: e.target.value, text: selectedText });
+        setText(`https://wa.me/6692727479/?text=Hola, soy ${nombre}, ${selectedText}`);
+    }
+
+    const handleChange2 = (e: any) => {
+        setNombre(e.target.value);
+    }
+
     return (
         <section className="flex-col md:pl-10 lg:pl-14 xl:pl-[24rem] md:pr-10 lg:pr-14 xl:pr-[24rem] bg-white">
             <img src="/8.jpg" alt="Imagen 1" className="max-h-full max-w-full" />
@@ -66,13 +81,38 @@ export default function Reglas() {
                 </span>
             </div>
 
-            <div className="flex flex-col items-center text-center px-[46px]">
+            <div className="flex flex-col items-center text-center mt-2 px-[46px]">
                 <span className="block text-1xl font-[300] font-secondary tracking-[1.5px]">
-                    Para nosotros es muy importante,
+                    Celebrar nuestro amor es un sueño hecho realidad, y para que sea perfecto, nos encantaría contar contigo en nuestra lista de invitados. ¿Nos confirmas tu asistencia?
                 </span>
             </div>
 
-            <img className="w-100 h-100 mt-[60px]" src="/22.jpg" alt="" />
+            <div className="flex flex-col items-center text-center mt-2 px-4 space-y-4">
+                <input
+                    value={nombre}
+                    onChange={handleChange2}
+                    type="text"
+                    placeholder="Nombre de los asistentes"
+                    className="border border-gray-300 p-2 w-64"
+                />
+
+                <select
+                    value={selectedOption.value}
+                    onChange={handleChange}
+                    className="border border-gray-300 p-2 w-64"
+                >
+                    <option value="1">Si podré asistir</option>
+                    <option value="2">Lo siento, no podré asistir</option>
+                </select>
+            </div>
+
+
+
+            <div className="flex flex-col items-center text-center mt-2 px-[46px]">
+                <a href={text} target="_blank" className="font-secondary text-sm tracking-ultra-wide bg-secondary text-primary px-4 py-2 mt-2 font-bold">ENVIAR</a>
+            </div>
+
+            <img src="/22.jpg" alt="Imagen 1" className="max-h-full max-w-full mt-[60px]" />
         </section>
     );
 }
