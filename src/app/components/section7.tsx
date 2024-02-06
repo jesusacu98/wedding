@@ -164,7 +164,7 @@ export default function Reglas(props: Props) {
                 <img src="/22.jpg" alt="Imagen 1" className="max-h-full max-w-full mt-[60px]" />
             </div>
 
-            <div className="bg-secondary text-white text-center py-2">
+            <div className="bg-secondary text-white text-center py-2 pl-[0px] pr-[0px]">
                 <span>
                     Invitación elaborada con amor por los novios.
                 </span>
