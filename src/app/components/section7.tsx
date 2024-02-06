@@ -113,8 +113,14 @@ export default function Reglas(props: Props) {
                 </div>
 
                 <div className="flex flex-col items-center text-justify mt-2 px-[35px]">
+                    <span className="block text-2xl text-secondary font-[300] font-cursive tracking-[1.5px]">
+                        Pases: {props.pases} personas
+                    </span>
+                </div>
+
+                <div className="flex flex-col items-center text-justify mt-2 px-[35px]">
                     <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
-                        Nos complace informarte que tienes reservados {props.pases} pases para nuestra noche. ¡Esperamos que puedas acompañarnos en este día tan especial!
+                        ¡Esperamos que puedas acompañarnos en este día tan especial!
                     </span>
                 </div>
 

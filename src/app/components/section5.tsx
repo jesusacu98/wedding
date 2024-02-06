@@ -24,16 +24,16 @@ export default function Fotos() {
                 </div>
             </ScrollAnimation>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-0">
+            <div className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-0">
                 <div className="bg-white h-full flex items-center justify-center">
                     <img src="/21.jpg" alt="Imagen 1" className="max-h-full max-w-full" />
                 </div>
                 <div className="flex justify-between">
                     <div className="flex">
-                        <div className="flex-grow h-40 flex items-center">
+                        <div className="flex-grow flex items-center">
                             <img src="/4.jpg" alt="Imagen 3" className="w-full h-full object-cover" />
                         </div>
-                        <div className="flex-grow h-40 flex items-center">
+                        <div className="flex-grow flex items-center">
                             <img src="/16.jpg" alt="Imagen 4" className="w-full h-full object-cover" />
                         </div>
                     </div>
