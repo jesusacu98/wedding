@@ -53,7 +53,7 @@ export default function Reglas(props: Props) {
     }
 
     const handleChangeNombre = (e: any) => {
-        setNombre(e.target.value.replace(/[^a-zA-Z]/g, ''));
+        setNombre(e.target.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚüÜ\s]/g, ''));
     }
 
     return (
