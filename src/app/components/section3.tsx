@@ -41,7 +41,7 @@ export default function AboutUs() {
 
                     <div className="flex flex-col items-center justify-center mt-8 px-[46px]">
                         <span className="block text-1xl font-[300] font-secondary tracking-[1.5px]">
-                            Coincidimos sin imaginar lo maravillosa que seria, nos hicimos novios y años después nos comprometimos.
+                            Nos encontramos sin imaginar la maravillosa aventura que nos esperaba, nos enamoramos, nos convertimos en pareja y, este año decidimos sellar nuestro compromiso para toda la vida.
                         </span>
                     </div>
                 </ScrollAnimation>
