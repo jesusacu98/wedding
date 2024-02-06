@@ -13,7 +13,7 @@ export default function Reglas() {
         let mensaje = "";
         if (selectedOption == 'si') mensaje = " y confirmo mi asistencia";
         else mensaje = ", lo siento no podre asistir";
-        setText(`https://wa.me/6692727479/?text=¡Hola!, soy ${nombre}${mensaje} a la boda`);
+        setText(`https://wa.me/6693258216/?text=¡Hola!, soy ${nombre}${mensaje} a la boda`);
     }
 
     useEffect(()=> {
@@ -113,13 +113,13 @@ export default function Reglas() {
                     onChange={handleChange2}
                     type="text"
                     placeholder="Tu nombre"
-                    className="border border-gray-300 p-2 w-64"
+                    className="text-black border border-gray-300 p-2 w-64"
                 />
 
                 <select
                     value={selectedOption}
                     onChange={handleChange}
-                    className="border border-gray-300 p-2 w-64"
+                    className="text-black border border-gray-300 p-2 w-64"
                 >
                     <option value="si">Si podré asistir</option>
                     <option value="no">Lo siento, no podré asistir</option>
