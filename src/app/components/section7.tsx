@@ -12,17 +12,27 @@ export default function Reglas(props: Props) {
     const [text, setText] = useState('');
     const [personas, setPersonas] = useState('');
 
+    const capitalizeFirstLetter = (string: string) => {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    };
+
+    const capitalizeWords = (sentence: string) => {
+        const words = sentence.split(' ');
+        const capitalizedWords = words.map(word => capitalizeFirstLetter(word));
+        return capitalizedWords.join(' ');
+    };
+
     const setMensaje = () => {
         if (!nombre.trim()) return;
 
         let mensaje = ``;
         if (selectedOption == 'si') mensaje = `, confirmo asistencia para ${props.pases} ${personas}.`;
         else mensaje = `, lo siento no podre asistir a la boda.`;
-        setText(`https://wa.me/6693258216/?text=¡Hola!, soy ${nombre}${mensaje}`);
+        setText(`https://wa.me/6693258216/?text=¡Hola!, soy ${capitalizeWords(nombre)}${mensaje}`);
     }
 
     const iniciarPersonas = () => {
-        if(props.pases === 1) setPersonas('persona');
+        if (props.pases === 1) setPersonas('persona');
         else setPersonas('personas');
     }
 
