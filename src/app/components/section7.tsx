@@ -130,7 +130,7 @@ export default function Reglas(props: Props) {
 
                     <div className="flex flex-col items-center text-justify mt-2 px-[35px]">
                         <span className="block text-2xl text-secondary font-[300] font-cursive tracking-[1.5px]">
-                            Pases: {props.pases} {personas}
+                            Pases para {props.pases} {personas}
                         </span>
                     </div>
 
