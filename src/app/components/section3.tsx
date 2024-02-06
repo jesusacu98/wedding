@@ -79,7 +79,7 @@ export default function AboutUs() {
                     </div>
                 </ScrollAnimation>
 
-                <div className="flex flex-col items-center justify-center mt-10">
+                <div className="flex flex-col items-center justify-center">
                     <img className="w-100 h-100" src="/fondo3.png" alt="" />
                     <span className="text-secondary block text-4xl font-cursive mt-[-34px] tracking-[1.5px] absolute">
                         Nuestros

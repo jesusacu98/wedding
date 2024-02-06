@@ -139,10 +139,6 @@ export default function Reglas() {
             <img src="/22.jpg" alt="Imagen 1" className="max-h-full max-w-full mt-[60px]" />
 
             <div className="bg-secondary text-white text-center py-2">
-                <div className="flex flex-col items-center justify-center">
-                    <img className="w-16 h-16" src="/corazones.png" alt="" />
-                </div>
-
                 <span>
                     Hecha con amor por los novios.
                 </span>
@@ -150,6 +146,10 @@ export default function Reglas() {
                 <p className="text-lg font-bold">
                     ¡Esperamos que nos puedas acompañar!
                 </p>
+
+                <div className="flex flex-col items-center justify-center">
+                    <img className="w-16 h-16" src="/corazones.png" alt="" />
+                </div>
             </div>
 
         </section>
