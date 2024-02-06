@@ -72,7 +72,7 @@ export default function Reglas(props: Props) {
                 </div>
 
                 <ScrollAnimation animateIn="animate__slideInLeft" animateOnce>
-                    <div className="flex items-center justify-center mt-[-150px]">
+                    <div className="flex items-center justify-center mt-[-100px]">
                         <img className="w-16 h-16" src="/vestido.png" alt="" />
                         <img className="w-16 h-16" src="/traje.png" alt="" />
                     </div>
