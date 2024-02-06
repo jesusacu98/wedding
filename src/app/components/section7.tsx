@@ -16,15 +16,15 @@ export default function Reglas() {
         setText(`https://wa.me/6693258216/?text=¡Hola!, soy ${nombre}${mensaje} a la boda`);
     }
 
-    useEffect(()=> {
+    useEffect(() => {
         console.log(selectedOption)
         setMensaje();
-    },[selectedOption]);
+    }, [selectedOption]);
 
-    useEffect(()=> {
+    useEffect(() => {
         console.log(selectedOption)
         setMensaje();
-    },[nombre]);
+    }, [nombre]);
 
     const handleChange = (e: any) => {
         setSelectedOption(e.target.value);
@@ -107,19 +107,19 @@ export default function Reglas() {
                 </span>
             </div>
 
-            <div className="flex flex-col items-center text-center mt-2 px-4 space-y-4">
+            <div className="flex flex-col items-center text-center mt-5 px-4 space-y-4">
                 <input
                     value={nombre}
                     onChange={handleChange2}
                     type="text"
                     placeholder="Tu nombre"
-                    className="text-black border border-gray-300 p-2 w-64"
+                    className="text-black border border-solid border-secondary p-2 w-64"
                 />
 
                 <select
                     value={selectedOption}
                     onChange={handleChange}
-                    className="text-black border border-gray-300 p-2 w-64"
+                    className="text-black border border-solid border-secondary p-2 w-64"
                 >
                     <option value="si">Si podré asistir</option>
                     <option value="no">Lo siento, no podré asistir</option>
@@ -137,6 +137,16 @@ export default function Reglas() {
             </div>
 
             <img src="/22.jpg" alt="Imagen 1" className="max-h-full max-w-full mt-[60px]" />
+
+            <div className="bg-secondary text-white text-center py-2">
+                <span>
+                    Elaborado por los novios
+                </span>
+                <p className="text-lg font-bold">
+                    La boda del año 2024
+                </p>
+            </div>
+
         </section>
     );
 }
