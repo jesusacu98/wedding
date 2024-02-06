@@ -103,7 +103,7 @@ export default function Reglas() {
 
             <div className="flex flex-col items-center text-center mt-2 px-[46px]">
                 <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
-                    Celebrar nuestro amor es un sueño hecho realidad, y para que sea perfecto, nos encantaría contar contigo en nuestra lista de invitados. ¿Nos confirmas tu asistencia?
+                    No podemos imaginar nuestra boda sin ti, por eso queremos asegurarnos de que estarás ahí para compartir esta felicidad con nosotros. ¿Contamos contigo?
                 </span>
             </div>
 
@@ -113,13 +113,13 @@ export default function Reglas() {
                     onChange={handleChange2}
                     type="text"
                     placeholder="Tu nombre"
-                    className="text-black border border-solid border-secondary p-2 w-64"
+                    className="text-black outline-none border border-solid border-secondary p-2 bg-white w-[240px] h-[50px]"
                 />
 
                 <select
                     value={selectedOption}
                     onChange={handleChange}
-                    className="text-black border border-solid border-secondary p-2 w-64"
+                    className="text-black outline-none border bg-white w-[240px] h-[50px] border-solid border-secondary p-2"
                 >
                     <option value="si">Si podré asistir</option>
                     <option value="no">Lo siento, no podré asistir</option>
@@ -140,10 +140,10 @@ export default function Reglas() {
 
             <div className="bg-secondary text-white text-center py-2">
                 <span>
-                    Elaborado por los novios
+                    Hecha con amor por los novios, esta invitación es el inicio de nuestra historia de boda.
                 </span>
                 <p className="text-lg font-bold">
-                    La boda del año 2024
+                    ¡Esperamos verte allí!
                 </p>
             </div>
 
