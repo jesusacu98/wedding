@@ -19,13 +19,19 @@ export default function AboutUs() {
                 <ScrollAnimation animateIn="animate__slideInRight" animateOnce>
                     <div className="flex flex-col items-center justify-center mt-3 px-[46px]">
                         <span className="text-black block text-2xl font-[300] font-principal tracking-[1.5px]">
-                            Adriana Guadalupe Hernández Marrujo
+                            Adriana Guadalupe
+                        </span>
+                        <span className="text-black block text-2xl font-[300] font-principal tracking-[1.5px]">
+                            Hernández Marrujo
                         </span>
                         <span className="block text-2xl font-[300] font-principal tracking-[1.5px]">
                             &
                         </span>
                         <span className="block text-2xl font-[300] font-principal tracking-[1.5px]">
-                            Jesús Alfredo Vizcarra Valdés
+                            Jesús Alfredo
+                        </span>
+                        <span className="block text-2xl font-[300] font-principal tracking-[1.5px]">
+                            Vizcarra Valdés
                         </span>
                     </div>
 

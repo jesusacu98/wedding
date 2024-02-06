@@ -13,11 +13,11 @@ export default function Portada() {
     });
 
     useEffect(() => {
-        const targetDate = new Date('March 08, 2024').getTime();
+        const targetDateTime = new Date('March 08, 2024 17:00:00').getTime();
 
         const interval = setInterval(() => {
             const now = new Date().getTime();
-            const timeDifference = targetDate - now;
+            const timeDifference = targetDateTime - now;
 
             const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));

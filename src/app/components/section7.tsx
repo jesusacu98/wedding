@@ -20,12 +20,10 @@ export default function Reglas(props: Props) {
     }
 
     useEffect(() => {
-        console.log(selectedOption)
         setMensaje();
     }, [selectedOption]);
 
     useEffect(() => {
-        console.log(selectedOption)
         setMensaje();
     }, [nombre]);
 
@@ -116,13 +114,13 @@ export default function Reglas(props: Props) {
                     onChange={handleChange2}
                     type="text"
                     placeholder="Tu nombre"
-                    className="text-black text-center outline-none border border-solid border-secondary p-2 bg-white w-[280px] h-[50px]"
+                    className="text-black outline-none border border-solid border-secondary p-2 bg-white w-[280px] h-[50px]"
                 />
 
                 <select
                     value={selectedOption}
                     onChange={handleChange}
-                    className="text-black text-center outline-none border bg-white w-[280px] h-[50px] border-solid border-secondary p-2"
+                    className="text-black outline-none border bg-white w-[280px] h-[50px] border-solid border-secondary p-2"
                 >
                     <option value="si">Si podré asistir</option>
                     <option value="no">Lo siento, no podré asistir</option>
@@ -143,7 +141,7 @@ export default function Reglas(props: Props) {
 
             <div className="bg-secondary text-white text-center py-2">
                 <span>
-                    Hecha con amor por los novios.
+                    Invitación hecha por los novios con amor.
                 </span>
 
                 <p className="text-lg font-bold">
