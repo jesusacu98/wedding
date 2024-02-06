@@ -9,6 +9,15 @@ import Informacion from "./components/section6";
 import Reglas from "./components/section7";
 
 export default function Home() {
+    const [pases, setPases] = useState(0);
+    useEffect(() => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const numberParam = urlParams.get('number');
+        if (numberParam) {
+            setPases(Number(numberParam)); // Convertimos a número antes de establecer el estado
+        }
+    }, []);
+
     return (
         <div className="flex flex-col">
             <Portada></Portada>
@@ -17,7 +26,7 @@ export default function Home() {
             <Location></Location>
             <Fotos></Fotos>
             <Informacion></Informacion>
-            <Reglas></Reglas>
+            <Reglas pases={pases}></Reglas>
         </div>
     );
 }
