@@ -1,24 +1,31 @@
 "use client";
 import { useState, useEffect } from "react";
+import ScrollAnimation from 'react-animate-on-scroll';
+import 'animate.css/animate.min.css';
 
 export default function Fotos() {
     return (
         <section className="flex-col md:pl-10 lg:pl-14 xl:pl-[24rem] md:pr-10 lg:pr-14 xl:pr-[24rem] bg-white">
-            <div className="flex flex-col items-center justify-center pt-[60px]">
-                <img className="w-16 h-16" src="/nuestro_amor.png" alt="" />
-            </div>
+            <ScrollAnimation animateIn="animate__bounceIn" animateOnce>
+                <div className="flex flex-col items-center justify-center pt-[60px]">
+                    <img className="w-16 h-16" src="/nuestro_amor.png" alt="" />
+                </div>
 
-            <div className="flex flex-col items-center justify-center pt-6">
-                <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
-                    Nuestro amor
-                </span>
-            </div>
+                <div className="flex flex-col items-center justify-center pt-6">
+                    <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
+                        Nuestro amor
+                    </span>
+                </div>
 
-            <div className="flex flex-col items-center text-center mt-10 px-[46px] pb-[60px]">
-                <span className="text-black block text-3xl font-cursive tracking-[1.5px]">
-                    Te quiero hoy, mañana, la semana entrante y el resto de mi vida.
-                </span>
-            </div>
+                <div className="flex flex-col items-center text-center mt-10 px-[46px] pb-[60px]">
+                    {/* <span className="text-black block text-3xl font-cursive tracking-[1.5px]">
+                        Te quiero hoy, mañana, la semana entrante y el resto de mi vida.
+                    </span> */}
+                    <span className="text-black text-1xl font-[300] font-secondary tracking-[1.5px]">
+                        Te quiero hoy, mañana, la semana entrante y el resto de mi vida.
+                    </span>
+                </div>
+            </ScrollAnimation>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-0">
                 <div className="bg-white h-full flex items-center justify-center">

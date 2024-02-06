@@ -7,10 +7,12 @@ import Location from "./components/section4";
 import Fotos from "./components/section5";
 import Informacion from "./components/section6";
 import Reglas from "./components/section7";
+import MusicPlayer from "./components/musicPlayer";
 
 export default function Home() {
     return (
         <div className="flex flex-col">
+            <MusicPlayer></MusicPlayer>
             <Portada></Portada>
             <Contador></Contador>
             <AboutUs></AboutUs>
