@@ -9,7 +9,7 @@ import Informacion from "./components/section6";
 import Reglas from "./components/section7";
 
 export default function Home() {
-    const [pases, setPases] = useState(2);
+    const [pases, setPases] = useState(1);
     useEffect(() => {
         const urlParams = new URLSearchParams(window.location.search);
         const numberParam = urlParams.get('np');
