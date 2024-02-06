@@ -14,7 +14,7 @@ export default function Location() {
                     </span>
                 </div>
 
-                <div className="relative flex flex-col md:flex-row text-primary leading-10 mt-[-12px]">
+                <div className="relative flex flex-col md:flex-row text-primary leading-10 mt-[-30px]">
                     <div className="w-full md:w-1/2 relative bg-cover bg-center border border-black border-solid p-4 h-[35em]" style={{ backgroundImage: "url('/iglesia.jpg')" }}>
                         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">

@@ -74,14 +74,6 @@ export default function Portada() {
                     </div>
                 </div>
             </ScrollAnimation>
-
-
-            {/* <div className="flex-col text-white text-center pt-6">
-                <button className="bg-secondary text-white font-secondary font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue active:bg-secondary">
-                    Agendar día
-                </button>
-            </div> */}
-
         </section>
     );
 }
