@@ -88,7 +88,7 @@ export default function Reglas(props: Props) {
 
                 <div className="flex flex-col items-center text-center px-[46px]">
                     <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
-                        Amamos a sus pequeños, pero queremos que en este día solo tengan que preocuparte por pasarla increíble.
+                        Amamos a sus pequeños, pero queremos que este día solo tengan que preocuparte por pasarla increíble.
                     </span>
                 </div>
             </ScrollAnimation>
@@ -106,30 +106,42 @@ export default function Reglas(props: Props) {
                     </span>
                 </div>
 
-                <div className="flex flex-col items-center text-center mt-2 px-[35px]">
+                <div className="flex flex-col items-center text-justify mt-2 px-[35px]">
                     <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
-                        No podemos imaginar nuestra boda sin ti, por eso queremos asegurarnos de que estarás ahí para compartir esta felicidad con nosotros. Nos complace informarte que tienes reservados {props.pases} pases para la boda. ¡Esperamos que puedas acompañarnos en este día tan especial!, ¿Contamos contigo?
+                        No podemos imaginar nuestra boda sin ti, por eso queremos asegurarnos de que estarás ahí para compartir esta felicidad con nosotros.
                     </span>
                 </div>
 
-            <div className="flex flex-col items-center text-center mt-5 px-4 space-y-4">
-                <input
-                    value={nombre}
-                    onChange={handleChange2}
-                    type="text"
-                    placeholder="Tu nombre"
-                    className="text-black outline-none border border-solid border-secondary p-2 bg-white w-[280px] h-[50px]"
-                />
+                <div className="flex flex-col items-center text-justify mt-2 px-[35px]">
+                    <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
+                        Nos complace informarte que tienes reservados {props.pases} pases para nuestra noche. ¡Esperamos que puedas acompañarnos en este día tan especial!
+                    </span>
+                </div>
 
-                <select
-                    value={selectedOption}
-                    onChange={handleChange}
-                    className="text-black outline-none border bg-white w-[280px] h-[50px] border-solid border-secondary p-2"
-                >
-                    <option value="si">Si podré asistir</option>
-                    <option value="no">Lo siento, no podré asistir</option>
-                </select>
-            </div>
+                <div className="flex flex-col items-center text-justify mt-2 px-[35px]">
+                    <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
+                        ¿Contamos contigo?
+                    </span>
+                </div>
+
+                <div className="flex flex-col items-center text-center mt-5 px-4 space-y-4">
+                    <input
+                        value={nombre}
+                        onChange={handleChange2}
+                        type="text"
+                        placeholder="Tu nombre"
+                        className="text-black outline-none border border-solid border-secondary p-2 bg-white w-[280px] h-[50px]"
+                    />
+
+                    <select
+                        value={selectedOption}
+                        onChange={handleChange}
+                        className="text-black outline-none border bg-white w-[280px] h-[50px] border-solid border-secondary p-2"
+                    >
+                        <option value="si">Si podré asistir</option>
+                        <option value="no">Lo siento, no podré asistir</option>
+                    </select>
+                </div>
 
                 <div className="flex flex-col items-center text-center mt-3 px-4 space-y-4">
                     {nombre.trim() ? (
@@ -146,7 +158,7 @@ export default function Reglas(props: Props) {
 
             <div className="bg-secondary text-white text-center py-2">
                 <span>
-                    Invitación hecha por los novios con amor.
+                    Invitación elaborada con amor por los novios.
                 </span>
 
                 <p className="text-lg font-bold">
