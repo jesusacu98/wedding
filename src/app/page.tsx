@@ -13,9 +13,7 @@ export default function Home() {
     useEffect(() => {
         const urlParams = new URLSearchParams(window.location.search);
         const numberParam = urlParams.get('np');
-        if (numberParam) {
-            setPases(Number(numberParam)); // Convertimos a número antes de establecer el estado
-        }
+        if (numberParam) setPases(Number(numberParam) === 0 ? 2 : Number(numberParam)); // Convertimos a número antes de establecer el estado
     }, []);
 
     return (
