@@ -75,7 +75,7 @@ export default function Reglas(props: Props) {
             </div>
 
             <div className="flex flex-col items-center justify-center mt-[60px]">
-                <img className="w-16 h-16" src="/noniños.png" alt="" />
+                <img className="w-16 h-16" src="/adultos.png" alt="" />
             </div>
 
             <div className="flex flex-col items-center justify-center">
