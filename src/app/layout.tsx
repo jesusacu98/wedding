@@ -7,7 +7,7 @@ import 'animate.css/animate.min.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Nuestra boda",
+    title: "Nuestra boda FINAL 1",
     description: "Adriana & Jesús",
 };
 
