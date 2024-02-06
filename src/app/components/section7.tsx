@@ -74,39 +74,43 @@ export default function Reglas(props: Props) {
                 </span>
             </div>
 
-            <div className="flex flex-col items-center justify-center mt-[60px]">
-                <img className="w-16 h-16" src="/adultos.png" alt="" />
-            </div>
+            <ScrollAnimation animateIn="animate__slideInRight" animateOnce>
+                <div className="flex flex-col items-center justify-center mt-[60px]">
+                    <img className="w-16 h-16" src="/adultos.png" alt="" />
+                </div>
 
-            <div className="flex flex-col items-center justify-center">
-                <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
-                    No niños
-                </span>
-            </div>
+                <div className="flex flex-col items-center justify-center">
+                    <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
+                        No niños
+                    </span>
+                </div>
 
-            <div className="flex flex-col items-center text-center px-[46px]">
-                <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
-                    Amamos a sus pequeños, pero queremos que en este día solo tengan que preocuparte por pasarla increíble.
-                </span>
-            </div>
+
+                <div className="flex flex-col items-center text-center px-[46px]">
+                    <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
+                        Amamos a sus pequeños, pero queremos que en este día solo tengan que preocuparte por pasarla increíble.
+                    </span>
+                </div>
+            </ScrollAnimation>
 
             <img className="w-100 h-100 mt-[60px]" src="/5.jpg" alt="" />
 
-            <div className="flex flex-col items-center justify-center mt-[60px]">
-                <img className="w-16 h-16" src="/asistencia.png" alt="" />
-            </div>
+            <ScrollAnimation animateIn="animate__fadeIn" animateOnce>
+                <div className="flex flex-col items-center justify-center mt-[60px]">
+                    <img className="w-16 h-16" src="/asistencia.png" alt="" />
+                </div>
 
-            <div className="flex flex-col items-center justify-center">
-                <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
-                    Confirma tu Asistencia
-                </span>
-            </div>
+                <div className="flex flex-col items-center justify-center">
+                    <span className="text-secondary block text-4xl font-cursive mt-2 tracking-[1.5px]">
+                        Confirma tu Asistencia
+                    </span>
+                </div>
 
-            <div className="flex flex-col items-center text-center mt-2 px-[35px]">
-                <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
-                    No podemos imaginar nuestra boda sin ti, por eso queremos asegurarnos de que estarás ahí para compartir esta felicidad con nosotros. Nos complace informarte que tienes reservados {props.pases} pases para la boda. ¡Esperamos que puedas acompañarnos en este día tan especial!, ¿Contamos contigo?
-                </span>
-            </div>
+                <div className="flex flex-col items-center text-center mt-2 px-[35px]">
+                    <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
+                        No podemos imaginar nuestra boda sin ti, por eso queremos asegurarnos de que estarás ahí para compartir esta felicidad con nosotros. Nos complace informarte que tienes reservados {props.pases} pases para la boda. ¡Esperamos que puedas acompañarnos en este día tan especial!, ¿Contamos contigo?
+                    </span>
+                </div>
 
             <div className="flex flex-col items-center text-center mt-5 px-4 space-y-4">
                 <input
@@ -127,15 +131,16 @@ export default function Reglas(props: Props) {
                 </select>
             </div>
 
-            <div className="flex flex-col items-center text-center mt-3 px-4 space-y-4">
-                {nombre.trim() ? (
-                    <a href={text} target="_blank" className="font-secondary text-sm tracking-ultra-wide bg-secondary text-primary px-4 py-2 mt-2 font-bold">
-                        ENVIAR
-                    </a>
-                ) : (
-                    <p className="text-secondary pl-[4em] pr-[4em]">Por favor, ingresa tu nombre para enviar una respuesta.</p>
-                )}
-            </div>
+                <div className="flex flex-col items-center text-center mt-3 px-4 space-y-4">
+                    {nombre.trim() ? (
+                        <a href={text} target="_blank" className="font-secondary text-sm tracking-ultra-wide bg-secondary text-primary px-4 py-2 mt-2 font-bold">
+                            ENVIAR
+                        </a>
+                    ) : (
+                        <p className="text-secondary pl-[4em] pr-[4em]">Por favor, ingresa tu nombre para enviar una respuesta.</p>
+                    )}
+                </div>
+            </ScrollAnimation >
 
             <img src="/22.jpg" alt="Imagen 1" className="max-h-full max-w-full mt-[60px]" />
 
@@ -153,6 +158,6 @@ export default function Reglas(props: Props) {
                 </div>
             </div>
 
-        </section>
+        </section >
     );
 }

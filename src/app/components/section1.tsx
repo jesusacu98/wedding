@@ -17,22 +17,22 @@ export default function Portada() {
         }
     };
 
-    useEffect(() => {
-        // Función para iniciar la reproducción cuando se hace clic en cualquier parte de la página
-        const handlePageClick = () => {
-            if (!isPlaying) {
-                togglePlay();
-            }
-        };
+    // useEffect(() => {
+    //     // Función para iniciar la reproducción cuando se hace clic en cualquier parte de la página
+    //     const handlePageClick = () => {
+    //         if (!isPlaying) {
+    //             togglePlay();
+    //         }
+    //     };
 
-        // Agrega el event listener al objeto document para capturar los clics en cualquier parte de la página
-        document.addEventListener("click", handlePageClick);
+    //     // Agrega el event listener al objeto document para capturar los clics en cualquier parte de la página
+    //     document.addEventListener("click", handlePageClick);
 
-        // Limpia el event listener al desmontar el componente
-        return () => {
-            document.removeEventListener("click", handlePageClick);
-        };
-    }, [isPlaying]);
+    //     // Limpia el event listener al desmontar el componente
+    //     return () => {
+    //         document.removeEventListener("click", handlePageClick);
+    //     };
+    // }, [isPlaying]);
 
     return (
         <>
