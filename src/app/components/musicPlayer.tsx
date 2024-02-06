@@ -1,9 +1,9 @@
 // components/MusicPlayer.js
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 const MusicPlayer = () => {
     const audioRef = useRef<HTMLAudioElement | null>(null);
-    const [isPlaying, setIsPlaying] = useState(true);
+    const [isPlaying, setIsPlaying] = useState(false);
 
     const togglePlay = () => {
         const audio = audioRef.current;
@@ -17,6 +17,10 @@ const MusicPlayer = () => {
             setIsPlaying((prevState) => !prevState);
         }
     };
+
+    useEffect(()=>{
+        togglePlay();
+    },[]);
 
     return (
         <div className="fixed bottom-0 right-0 m-4 z-50">
