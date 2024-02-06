@@ -10,10 +10,10 @@ export default function Reglas() {
 
     const setMensaje = () => {
         if (!nombre.trim()) return;
-        let mensaje = "";
-        if (selectedOption == 'si') mensaje = " y confirmo mi asistencia";
-        else mensaje = ", lo siento no podre asistir";
-        setText(`https://wa.me/6693258216/?text=¡Hola!, soy ${nombre}${mensaje} a la boda`);
+        let mensaje = ``;
+        if (selectedOption == 'si') mensaje = ` , confirmo asistencia para 2 personas.`;
+        else mensaje = `, lo siento no podre asistir.`;
+        setText(`https://wa.me/6693258216/?text=¡Hola!, soy ${nombre}${mensaje}`);
     }
 
     useEffect(() => {
@@ -103,7 +103,7 @@ export default function Reglas() {
 
             <div className="flex flex-col items-center text-center mt-2 px-[46px]">
                 <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
-                    No podemos imaginar nuestra boda sin ti, por eso queremos asegurarnos de que estarás ahí para compartir esta felicidad con nosotros. ¿Contamos contigo?
+                    No podemos imaginar nuestra boda sin ti, por eso queremos asegurarnos de que estarás ahí para compartir esta felicidad con nosotros. Nos complace informarte que tienes reservados dos pases para la boda. ¡Esperamos que puedas acompañarnos en este día tan especial!, ¿Contamos contigo?
                 </span>
             </div>
 
@@ -144,7 +144,7 @@ export default function Reglas() {
                 </span>
 
                 <p className="text-lg font-bold">
-                    ¡Esperamos que nos puedas acompañar!
+                    ¡Gracias por escribir este capítulo con nosotros!
                 </p>
 
                 <div className="flex flex-col items-center justify-center">

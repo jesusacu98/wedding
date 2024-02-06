@@ -65,7 +65,7 @@ export default function AboutUs() {
                             Adriana Guadalupe Marrujo Ríos
                         </span>
                         <span className="block text-1xl font-[300] font-secondary mt-2 tracking-[1.5px]">
-                            Héctor Manuel Hernández Saenz
+                            Héctor Manuel Hernández Sainz
                         </span>
                         <span className="text-secondary block text-4xl font-cursive mt-10 tracking-[1.5px]">
                             Novio
