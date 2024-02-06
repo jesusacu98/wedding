@@ -160,7 +160,7 @@ export default function Reglas(props: Props) {
                 </div>
             </ScrollAnimation >
 
-            <div className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-0">
+            <div className="flex flex-col items-center justify-center">
                 <img src="/22.jpg" alt="Imagen 1" className="max-h-full max-w-full mt-[60px]" />
             </div>
 
