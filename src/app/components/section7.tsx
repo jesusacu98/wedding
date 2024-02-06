@@ -3,7 +3,10 @@ import { useEffect, useState } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 
-export default function Reglas() {
+interface Props {
+    pases: number;
+}
+export default function Reglas(props: Props) {
     const [selectedOption, setSelectedOption] = useState('si');
     const [nombre, setNombre] = useState('');
     const [text, setText] = useState('');
