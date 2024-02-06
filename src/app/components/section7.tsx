@@ -160,12 +160,12 @@ export default function Reglas(props: Props) {
                     </div>
                 </ScrollAnimation>
 
-                <div className="flex flex-col items-center justify-center">
-                    <img src="/22.jpg" alt="Imagen 1" className="max-h-full max-w-full mt-[60px]" />
+                <div className="flex flex-col items-center justify-center mt-[60px]">
+                    <img src="/22.jpg" alt="Imagen 1" className="max-h-full max-w-full" />
                 </div>
             </section>
 
-            <div className="bg-secondary text-white text-center py-2 mt-[60px]">
+            <div className="bg-secondary text-white text-center py-2">
                 <span>
                     Invitación elaborada con amor por los novios.
                 </span>

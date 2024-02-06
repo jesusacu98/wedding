@@ -40,3 +40,16 @@ body {
 .text-1xl {
   font-size: 1em;
 }
+
+@media (max-width: 768px) {
+  .bgi-principal {
+    background-image: url('../../public/17-movil.jpg');
+  }
+}
+
+@media (min-width: 769px) {
+  .bgi-principal {
+    background-image: url('../../public/17-web.jpg');
+    background-position: top;
+  }
+}

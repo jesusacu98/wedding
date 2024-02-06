@@ -20,6 +20,10 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" />
+                <meta name="description" content="Descripción de mi página" />
+                <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+                <meta http-equiv="Pragma" content="no-cache" />
+                <meta http-equiv="Expires" content="0" />
             </head>
             <body className={inter.className}>
                 {children}
