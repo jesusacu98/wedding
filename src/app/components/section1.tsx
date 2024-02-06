@@ -19,6 +19,7 @@ export default function Portada() {
         }
     };
 
+    //Se comentó este fragmento de código
     // useEffect(() => {
     //     // Función para iniciar la reproducción cuando se hace clic en cualquier parte de la página
     //     const handlePageClick = () => {
