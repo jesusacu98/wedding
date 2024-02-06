@@ -14,8 +14,8 @@ export default function Reglas(props: Props) {
     const setMensaje = () => {
         if (!nombre.trim()) return;
         let mensaje = ``;
-        if (selectedOption == 'si') mensaje = ` , confirmo asistencia para {props.pases} personas.`;
-        else mensaje = `, lo siento no podre asistir.`;
+        if (selectedOption == 'si') mensaje = `, confirmo asistencia para ${props.pases} personas.`;
+        else mensaje = `, lo siento no podre asistir a la boda.`;
         setText(`https://wa.me/6693258216/?text=¡Hola!, soy ${nombre}${mensaje}`);
     }
 
