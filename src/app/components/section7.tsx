@@ -26,9 +26,9 @@ export default function Reglas(props: Props) {
         if (!nombre.trim()) return;
 
         let mensaje = ``;
-        if (selectedOption == 'si') mensaje = `, confirmo asistencia para ${props.pases} ${personas}.`;
-        else mensaje = `, lo siento no podre asistir a la boda.`;
-        setText(`https://wa.me/6693258216/?text=¡Hola!, soy ${capitalizeWords(nombre)}${mensaje}`);
+        if (selectedOption == 'si') mensaje = `confirmo asistencia para ${props.pases} ${personas}.`;
+        else mensaje = `lo siento no podre asistir a la boda.`;
+        setText(`https://wa.me/6693258216/?text=¡Hola!, soy ${capitalizeWords(nombre)}, y ${mensaje}`);
     }
 
     const iniciarPersonas = () => {
@@ -48,12 +48,12 @@ export default function Reglas(props: Props) {
         setMensaje();
     }, [nombre]);
 
-    const handleChange = (e: any) => {
+    const handleChangeAsistencia = (e: any) => {
         setSelectedOption(e.target.value);
     }
 
-    const handleChange2 = (e: any) => {
-        setNombre(e.target.value);
+    const handleChangeNombre = (e: any) => {
+        setNombre(e.target.value.replace(/[^a-zA-Z]/g, ''));
     }
 
     return (
@@ -71,7 +71,7 @@ export default function Reglas(props: Props) {
                     </span>
                 </div>
 
-                <ScrollAnimation animateIn="animate__bounceIn" animateOnce>
+                <ScrollAnimation animateIn="animate__slideInLeft" animateOnce>
                     <div className="flex items-center justify-center mt-[-150px]">
                         <img className="w-16 h-16" src="/vestido.png" alt="" />
                         <img className="w-16 h-16" src="/traje.png" alt="" />
@@ -149,14 +149,14 @@ export default function Reglas(props: Props) {
                     <div className="flex flex-col items-center text-center mt-5 px-4 space-y-4">
                         <input
                             value={nombre}
-                            onChange={handleChange2}
+                            onChange={handleChangeNombre}
                             type="text"
                             placeholder="Tu nombre"
                             className="text-black outline-none border border-solid border-secondary p-2 bg-white w-[280px] h-[50px]" />
 
                         <select
                             value={selectedOption}
-                            onChange={handleChange}
+                            onChange={handleChangeAsistencia}
                             className="text-black outline-none border bg-white w-[280px] h-[50px] border-solid border-secondary p-2"
                         >
                             <option value="si">Si podré asistir</option>
