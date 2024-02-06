@@ -4,12 +4,12 @@ import { useEffect, useRef, useState } from "react";
 export default function Portada() {
     const audioRef = useRef<HTMLAudioElement | null>(null);
     const [isPlaying, setIsPlaying] = useState(false);
-    const [volume, setVolume] = useState(0.01);
+    // const [volume, setVolume] = useState(0.01);
 
     const togglePlay = () => {
         const audio = audioRef.current;
         if (audio) {
-            audio.volume = volume;
+            // audio.volume = volume;
             if (isPlaying) {
                 audio.pause();
             } else {
