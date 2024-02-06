@@ -12,7 +12,7 @@ export default function Home() {
     const [pases, setPases] = useState(0);
     useEffect(() => {
         const urlParams = new URLSearchParams(window.location.search);
-        const numberParam = urlParams.get('number');
+        const numberParam = urlParams.get('np');
         if (numberParam) {
             setPases(Number(numberParam)); // Convertimos a número antes de establecer el estado
         }

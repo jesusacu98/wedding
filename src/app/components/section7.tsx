@@ -14,7 +14,7 @@ export default function Reglas(props: Props) {
     const setMensaje = () => {
         if (!nombre.trim()) return;
         let mensaje = ``;
-        if (selectedOption == 'si') mensaje = ` , confirmo asistencia para 2 personas.`;
+        if (selectedOption == 'si') mensaje = ` , confirmo asistencia para {props.pases} personas.`;
         else mensaje = `, lo siento no podre asistir.`;
         setText(`https://wa.me/6693258216/?text=¡Hola!, soy ${nombre}${mensaje}`);
     }
@@ -104,9 +104,9 @@ export default function Reglas(props: Props) {
                 </span>
             </div>
 
-            <div className="flex flex-col items-center text-center mt-2 px-[46px]">
+            <div className="flex flex-col items-center text-center mt-2 px-[35px]">
                 <span className="block text-1xl text-black font-[300] font-secondary tracking-[1.5px]">
-                    No podemos imaginar nuestra boda sin ti, por eso queremos asegurarnos de que estarás ahí para compartir esta felicidad con nosotros. Nos complace informarte que tienes reservados dos pases para la boda. ¡Esperamos que puedas acompañarnos en este día tan especial!, ¿Contamos contigo?
+                    No podemos imaginar nuestra boda sin ti, por eso queremos asegurarnos de que estarás ahí para compartir esta felicidad con nosotros. Nos complace informarte que tienes reservados {props.pases} pases para la boda. ¡Esperamos que puedas acompañarnos en este día tan especial!, ¿Contamos contigo?
                 </span>
             </div>
 
@@ -116,13 +116,13 @@ export default function Reglas(props: Props) {
                     onChange={handleChange2}
                     type="text"
                     placeholder="Tu nombre"
-                    className="text-black text-center outline-none border border-solid border-secondary p-2 bg-white w-[240px] h-[50px]"
+                    className="text-black text-center outline-none border border-solid border-secondary p-2 bg-white w-[280px] h-[50px]"
                 />
 
                 <select
                     value={selectedOption}
                     onChange={handleChange}
-                    className="text-black text-center outline-none border bg-white w-[240px] h-[50px] border-solid border-secondary p-2"
+                    className="text-black text-center outline-none border bg-white w-[280px] h-[50px] border-solid border-secondary p-2"
                 >
                     <option value="si">Si podré asistir</option>
                     <option value="no">Lo siento, no podré asistir</option>
@@ -147,7 +147,7 @@ export default function Reglas(props: Props) {
                 </span>
 
                 <p className="text-lg font-bold">
-                    ¡Gracias por escribir este capítulo con nosotros!
+                    ¡Gracias por escribir este nuevo capítulo con nosotros!
                 </p>
 
                 <div className="flex flex-col items-center justify-center">
