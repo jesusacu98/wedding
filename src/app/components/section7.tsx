@@ -113,13 +113,13 @@ export default function Reglas() {
                     onChange={handleChange2}
                     type="text"
                     placeholder="Tu nombre"
-                    className="text-black outline-none border border-solid border-secondary p-2 bg-white w-[240px] h-[50px]"
+                    className="text-black text-center outline-none border border-solid border-secondary p-2 bg-white w-[240px] h-[50px]"
                 />
 
                 <select
                     value={selectedOption}
                     onChange={handleChange}
-                    className="text-black outline-none border bg-white w-[240px] h-[50px] border-solid border-secondary p-2"
+                    className="text-black text-center outline-none border bg-white w-[240px] h-[50px] border-solid border-secondary p-2"
                 >
                     <option value="si">Si podré asistir</option>
                     <option value="no">Lo siento, no podré asistir</option>
@@ -139,11 +139,16 @@ export default function Reglas() {
             <img src="/22.jpg" alt="Imagen 1" className="max-h-full max-w-full mt-[60px]" />
 
             <div className="bg-secondary text-white text-center py-2">
+                <div className="flex flex-col items-center justify-center">
+                    <img className="w-16 h-16" src="/corazones.png" alt="" />
+                </div>
+
                 <span>
-                    Hecha con amor por los novios, esta invitación es el inicio de nuestra historia de boda.
+                    Hecha con amor por los novios.
                 </span>
+
                 <p className="text-lg font-bold">
-                    ¡Esperamos verte allí!
+                    ¡Esperamos que nos puedas acompañar!
                 </p>
             </div>
 
