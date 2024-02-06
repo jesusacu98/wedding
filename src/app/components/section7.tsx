@@ -10,7 +10,6 @@ export default function Reglas(props: Props) {
     const [selectedOption, setSelectedOption] = useState('si');
     const [nombre, setNombre] = useState('');
     const [text, setText] = useState('');
-    const [pases, setpases] = useState('');
     const [personas, setPersonas] = useState('');
 
     const capitalizeFirstLetter = (string: string) => {
@@ -33,14 +32,8 @@ export default function Reglas(props: Props) {
     }
 
     const iniciarPersonas = () => {
-        if (props.pases === 1) {
-            setpases('Pase');
-            setPersonas('persona');
-        }
-        else {
-            setPersonas('Pases');
-            setpases('personas');
-        }
+        if (props.pases === 1) setPersonas('persona');
+        else setPersonas('personas');
     }
 
     useEffect(() => {
@@ -137,7 +130,7 @@ export default function Reglas(props: Props) {
 
                     <div className="flex flex-col items-center text-justify mt-2 px-[35px]">
                         <span className="block text-2xl text-secondary font-[300] font-cursive tracking-[1.5px]">
-                            {pases} para {props.pases} {personas}
+                            Pase para {props.pases} {personas}
                         </span>
                     </div>
 
