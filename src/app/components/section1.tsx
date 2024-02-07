@@ -42,9 +42,9 @@ export default function Portada() {
             <div className="fixed bottom-0 right-0 m-4 z-50">
                 <div className="rounded-full p-3" onClick={togglePlay}>
                     {!isPlaying ? (
-                        <i aria-hidden="true" className='fa-solid fa-play text-secondary text-4xl'></i>
+                        <i aria-hidden="true" className='fa-solid fa-play text-black text-4xl'></i>
                     ) : (
-                        <i aria-hidden="true" className='fa-solid fa-volume-xmark text-secondary text-4xl'></i>
+                        <i aria-hidden="true" className='fa-solid fa-volume-xmark text-black text-4xl'></i>
                     )}
                 </div>
                 <audio ref={audioRef} controls className="my-custom-audio-style ml-2 hidden">
