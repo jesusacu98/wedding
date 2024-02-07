@@ -47,7 +47,7 @@ export default function Informacion() {
                     </div>
 
                     <div className="flex flex-col items-center justify-center">
-                        <span className="text-black block text-2xl font-secondary mt-1 tracking-[1.5px]">
+                        <span className="text-black block text-2xl font-principal mt-1 tracking-[1.5px]">
                             Cimaco
                         </span>
                     </div>
@@ -58,9 +58,9 @@ export default function Informacion() {
                         </span>
                     </div>
 
-                    <div className="flex flex-col items-center justify-center">
+                    {/* <div className="flex flex-col items-center justify-center">
                         <a href="https://www.cimaco.com.mx/mesa-regalo/43880" target="_blank" className="font-secondary text-sm tracking-ultra-wide bg-black text-white px-4 py-2 mt-2 font-bold">VER MESA</a>
-                    </div>
+                    </div> */}
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn="animate__zoomIn" animateOnce>
@@ -69,7 +69,7 @@ export default function Informacion() {
                     </div>
 
                     <div className="flex flex-col items-center justify-center">
-                        <span className="text-black block text-2xl font-principal mt-2 tracking-[1.5px]">
+                        <span className="text-black block text-2xl font-principal mt-2 mb-10 tracking-[1.5px]">
                             Lluvia de sobres
                         </span>
                     </div>
